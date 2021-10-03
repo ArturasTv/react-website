@@ -1,0 +1,32 @@
+.Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+.Icons {
+  text-align: center;
+  padding-top: 40px;
+  a:nth-child(2) {
+    padding: 12%;
+  }
+}
+.Contact-text {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+}
+
+@media screen and (max-width: 750px) {
+  .Contact-text {
+    font-size: 45px;
+  }
+
+  .Icons {
+    svg {
+      height: 60px;
+      width: 60px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+$bg-color: #1f2227;
+$font-color: #f0f0f0;
+$close-color-hover: rgba(105, 89, 248, 0.5);
+.message {
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 360px;
+  height: 180px;
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  span {
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .close:before,
+  .close:after {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 5px;
+    height: 20px;
+    background-color: $font-color;
+    transform: rotate(45deg) translate(-50%, -50%);
+    transform-origin: top left;
+    transition: all 420ms;
+    content: "";
+    cursor: pointer;
+  }
+  .close:after {
+    transform: rotate(-45deg) translate(-50%, -50%);
+  }
+  .close:hover:before,
+  .close:hover:after {
+    background-color: $close-color-hover;
+  }
+}

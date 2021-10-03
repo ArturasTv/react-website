@@ -1,0 +1,5 @@
+@mixin viewHeight {
+  height: -moz-calc(100vh - 85px); /* Firefox */
+  height: -webkit-calc(100vh - 85px); /* Chrome, Safari */
+  height: calc(100vh - 85px); /* IE9+ and future browsers */
+}

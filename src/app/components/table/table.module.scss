@@ -1,0 +1,77 @@
+.Git-table {
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto;
+  table {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-spacing: 0;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    tr {
+      :last-child {
+        td {
+          border-bottom: 0;
+        }
+      }
+    }
+    thead {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    tr:nth-child(2n) {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    th,
+    td {
+      .sort {
+        font-size: 9px;
+      }
+      a {
+        text-decoration: none;
+        color: rgba(255, 255, 255, 0.897);
+        font-weight: 700;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      margin: 0;
+      padding: 0.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+      border-right: 1px solid rgba(255, 255, 255, 0.25);
+
+      :last-child {
+        border-right: 0;
+      }
+    }
+  }
+  .button {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: black;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    .active {
+      background-color: rgba(255, 255, 255, 0.2);
+      border: none;
+      color: black;
+      padding: 7px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  }
+}
+.pagination {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}

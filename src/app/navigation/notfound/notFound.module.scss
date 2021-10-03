@@ -1,0 +1,13 @@
+.NotFound {
+  width: 100%;
+  height: -moz-calc(100vh - 85px); /* Firefox */
+  height: -webkit-calc(100vh - 85px); /* Chrome, Safari */
+  height: calc(100vh - 85px); /* IE9+ and future browsers */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    color: white;
+    font-size: 3vw;
+  }
+}

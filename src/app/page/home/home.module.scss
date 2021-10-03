@@ -1,0 +1,81 @@
+@import "./../../sass/master";
+.Content {
+  width: 100%;
+  @include viewHeight();
+}
+
+.Name {
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  padding-top: 20vh;
+}
+.About {
+  font-style: normal;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Project-button {
+  width: 280px;
+  height: 60px;
+  border: 2px solid #ffffff;
+
+  display: grid;
+  place-items: center;
+
+  margin: 0 auto;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.Project-button:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: black;
+  a {
+    color: black;
+  }
+}
+
+.Button-text {
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  div.Name {
+    font-size: 72px;
+  }
+  div.About {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  div.Name {
+    font-size: 36px;
+  }
+  div.About {
+    font-size: 18px;
+  }
+  div.Project-button {
+    width: 200px;
+    height: 40px;
+    .Button-text {
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+}
